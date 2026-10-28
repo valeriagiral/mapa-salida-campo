@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ee86d556d59f9521a10542a235570ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2ee86d556d59f9521a10542a235570ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2ee86d556d59f9521a10542a235570ea = L.map(
+                "map_2ee86d556d59f9521a10542a235570ea",
+                {
+                    center: [8.09306, -76.7283],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4712794d1c5ff6374ca2ae116949e7aa = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=r\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map data \u00a92024 Google",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4712794d1c5ff6374ca2ae116949e7aa.addTo(map_2ee86d556d59f9521a10542a235570ea);
+        
+    
+            var marker_2fa84efe556bb5af47be45f16182f791 = L.marker(
+                [8.094805, -76.740871],
+                {
+}
+            ).addTo(map_2ee86d556d59f9521a10542a235570ea);
+        
+    
+            var icon_39a33308189e5307f25dae96f29726e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3394b7cccd15b96514564e570fab38c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4fd802b7dd6bb44ac1b59bca740e881 = $(`<div id="html_a4fd802b7dd6bb44ac1b59bca740e881" style="width: 100.0%; height: 100.0%;"><a href="https://turismoantioquia.travel/turbo/" target="_blank">Página oficial</a></div>`)[0];
+                popup_3394b7cccd15b96514564e570fab38c1.setContent(html_a4fd802b7dd6bb44ac1b59bca740e881);
+            
+        
+
+        marker_2fa84efe556bb5af47be45f16182f791.bindPopup(popup_3394b7cccd15b96514564e570fab38c1)
+        ;
+
+        
+    
+    
+            marker_2fa84efe556bb5af47be45f16182f791.bindTooltip(
+                `<div>
+                     Playa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2fa84efe556bb5af47be45f16182f791.setIcon(icon_39a33308189e5307f25dae96f29726e7);
+            
+    
+            var marker_0ad003c2455d90fbb524d9216391923e = L.marker(
+                [8.093493, -76.715773],
+                {
+}
+            ).addTo(map_2ee86d556d59f9521a10542a235570ea);
+        
+    
+            var icon_6c475640858a7726a5587ebc5e7caf3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a706447a72cf87852d4645cfa3b70726 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6c38c6918950ef7fd9671e767737cf7 = $(`<div id="html_c6c38c6918950ef7fd9671e767737cf7" style="width: 100.0%; height: 100.0%;"><a href="https://www.turbo-antioquia.gov.co/Paginas/Inicio.aspx" target="_blank">Página oficial</a></div>`)[0];
+                popup_a706447a72cf87852d4645cfa3b70726.setContent(html_c6c38c6918950ef7fd9671e767737cf7);
+            
+        
+
+        marker_0ad003c2455d90fbb524d9216391923e.bindPopup(popup_a706447a72cf87852d4645cfa3b70726)
+        ;
+
+        
+    
+    
+            marker_0ad003c2455d90fbb524d9216391923e.bindTooltip(
+                `<div>
+                     Alcaldia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ad003c2455d90fbb524d9216391923e.setIcon(icon_6c475640858a7726a5587ebc5e7caf3e);
+            
+    
+            var marker_0253d9c66e25b630e9b85c27bf08308e = L.marker(
+                [8.091604, -76.731516],
+                {
+}
+            ).addTo(map_2ee86d556d59f9521a10542a235570ea);
+        
+    
+            var icon_285445553a4862aab2464d571cf6e396 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0253d9c66e25b630e9b85c27bf08308e.bindTooltip(
+                `<div>
+                     Plaza de mercado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0253d9c66e25b630e9b85c27bf08308e.setIcon(icon_285445553a4862aab2464d571cf6e396);
+            
+    
+            var marker_54c7a63fadc814a0556eb0a79f4f8042 = L.marker(
+                [8.081818, -76.722781],
+                {
+}
+            ).addTo(map_2ee86d556d59f9521a10542a235570ea);
+        
+    
+            var icon_76b81503be63e90dc3b67e0a2f45ae25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_54c7a63fadc814a0556eb0a79f4f8042.bindTooltip(
+                `<div>
+                     Puerto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54c7a63fadc814a0556eb0a79f4f8042.setIcon(icon_76b81503be63e90dc3b67e0a2f45ae25);
+            
+</script>
+</html>
